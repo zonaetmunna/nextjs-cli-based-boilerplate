@@ -1,0 +1,41 @@
+{
+  "name": "create-nx-next",
+  "version": "1.0.0",
+  "description": "CLI to scaffold Next.js boilerplate projects",
+  "type": "module",
+  "bin": {
+    "nx-next": "./bin/nx-next.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "dev": "node ./bin/nx-next.js",
+    "lint": "biome check ."
+  },
+  "keywords": [
+    "nextjs",
+    "boilerplate",
+    "cli",
+    "scaffold",
+    "starter",
+    "template"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "execa": "^9.6.1",
+    "fs-extra": "^11.3.0",
+    "prompts": "^2.4.2"
+  }
+}

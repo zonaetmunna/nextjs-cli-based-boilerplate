@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# all node_modules folders in full project
+**/node_modules/
+
+# Build outputs
+.next/
+dist/
+build/
+out/
+
+# Rust
+target/
+
+# Go
+*.exe
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Turbo
+.turbo/
+
+# Debug
+npm-debug.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Lock files inside templates (each template has its own)
+apps/templates/*/pnpm-lock.yaml
