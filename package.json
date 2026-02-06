@@ -8,7 +8,13 @@
     "build": "turbo run build",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "cli:node": "node packages/cli-node/bin/nx-next.js",
+    "cli:node:publish": "cd packages/cli-node && npm publish",
+    "cli:go:build": "cd packages/cli-go && go build -o nx-next.exe main.go",
+    "cli:go:run": "cd packages/cli-go && go run main.go",
+    "cli:rust:build": "cd packages/cli-rust && cargo build --release",
+    "cli:rust:run": "cd packages/cli-rust && cargo run"
   },
   "keywords": [],
   "author": "",
